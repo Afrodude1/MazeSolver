@@ -145,7 +145,7 @@ def main():
     brain.print(f'Exploration completed in: {time.time() - start_time:.2f}s\n')
     
     start_time = time.time()
-    path = a_star(graph)  # Compute shortest path
+    path = await a_star(graph)  # Compute shortest path
     brain.print(f'Shortest path found in: {time.time() - start_time:.2f}s\n')
     
     pen.set_pen_color(GREEN)
